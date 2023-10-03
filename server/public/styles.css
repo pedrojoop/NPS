@@ -1,0 +1,161 @@
+/* Reset de estilos padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #0074cc;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada pergunta */
+.question {
+    margin-bottom: 20px;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s, transform 0.3s;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para rótulos das perguntas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilos para campos de entrada de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para botões */
+button {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #0056a3;
+}
+
+/* Ocultar elementos com a classe "hidden" */
+.hidden {
+    display: none;
+}
+
+/* Efeito de transição para as perguntas */
+.question.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/* Estilos para a mensagem de agradecimento */
+#thank-you-message {
+    text-align: center;
+    color: #0074cc;
+}
+
+#thank-you-message button {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#thank-you-message button:hover {
+    background-color: #0056a3;
+}
+
+/* Estilo para as opções de múltipla escolha */
+input[type="radio"] {
+    display: none; /* Oculta os inputs padrão */
+}
+
+/* Estilo para o rótulo das opções de múltipla escolha */
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0074cc; /* Cor de fundo personalizada */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o rótulo das opções de múltipla escolha quando hover (passando o mouse) */
+input[type="radio"] + label:hover {
+    background-color: #0056a3; /* Cor de fundo personalizada ao passar o mouse */
+}
+
+/* Estilo para o rótulo das opções de múltipla escolha selecionado */
+input[type="radio"]:checked + label {
+    background-color: #004d94; /* Cor de fundo personalizada para opção selecionada */
+}
+
+
+/* Estilos para a caixa de comentário */
+.comment-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Estilizar opções de múltipla escolha "Sim" e "Não" */
+.radio-options-yes-no {
+    display: flex;
+    align-items: center;
+}
+
+.radio-options-yes-no input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Outros estilos responsivos */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .question {
+        padding: 10px;
+    }
+}

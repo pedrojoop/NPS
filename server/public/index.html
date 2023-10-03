@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação do Cliente</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Satisfação do Cliente</h1>
+        <form id="survey-form">
+            <div class="question" id="question1">
+                <label for="q1">Pergunta 1: Quão satisfeito você está com o serviço de hoje?</label>
+                <div class="radio-options">
+                    <input type="radio" id="very-satisfied" name="q1" value="Muito Satisfeito" required>
+                    <label for="very-satisfied">Muito Satisfeito</label>
+                    <input type="radio" id="satisfied" name="q1" value="Satisfeito">
+                    <label for="satisfied">Satisfeito</label>
+                    <input type="radio" id="partially-satisfied" name="q1" value="Parcialmente Satisfeito">
+                    <label for="partially-satisfied">Parcialmente Satisfeito</label>
+                    <input type="radio" id="not-satisfied" name="q1" value="Insatisfeito">
+                    <label for="not-satisfied">Insatisfeito</label>
+                </div>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <label for="q2">Pergunta 2: Você gostaria de fornecer algum comentário adicional?</label>
+                <div class="radio-options">
+                    <input type="radio" id="yes" name="q2" value="Sim" required>
+                    <label for="yes">Sim</label>
+                    <input type="radio" id="no" name="q2" value="Não">
+                    <label for="no">Não</label>
+                </div>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <label for="q3">Pergunta 3: Deixe seu comentário</label>
+                <input type="text" id="q3" name="q3" required>
+            </div>
+            <button type="button" id="next-button">Próxima Pergunta</button>
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none;">
+        <p>Obrigado por participar da pesquisa!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
