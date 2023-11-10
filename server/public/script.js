@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showThankYouMessage() {
         thankYouMessage.style.display = "block";
 
-        // Agende o reinício do formulário após 5 segundos
+
         setTimeout(function () {
             restartSurvey();
         }, 5000); // 5000 milissegundos = 5 segundos
